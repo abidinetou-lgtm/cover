@@ -202,4 +202,5 @@ function buildSpeakOrder(players) {
   return [...others, ...whites]
 }
 
-server.listen(3001, () => console.log('Serveur sur le port 3001'))
+const PORT = process.env.PORT || 3001
+server.listen(PORT, () => console.log('Serveur sur le port', PORT))
